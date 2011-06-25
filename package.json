@@ -3,10 +3,10 @@
   "name": "require-like",
   "description": "Generates require functions that act like those of a given module.",
   "version": "0.0.0",
-  "homepage": "https://github.com/felixge/require-like",
+  "homepage": "https://github.com/felixge/node-require-like",
   "repository": {
     "type": "git",
-    "url": "git://github.com/felixge/require-like.git"
+    "url": "git://github.com/felixge/node-require-like.git"
   },
   "main": "./lib/require-like",
   "engines": {
