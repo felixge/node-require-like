@@ -1,6 +1,6 @@
 # require-like
 
-Generates require functions that act like those of a given module.
+Generates require functions that act as if they were operating in a given path.
 
 ## Install
 
