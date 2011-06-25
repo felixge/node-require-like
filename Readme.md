@@ -13,7 +13,8 @@ npm install require-like
 A require function that acts as if it was executed in `'./lib/bar'`:
 
 ``` javascript
-var myRequire = require('require-like').module(__dirname + '/lib/bar.js');
+var requireLike = require('require-like');
+var myRequire = requireLike(__dirname + '/lib/bar.js');
 
 var myFoo = myRequire('./foo.js');
 var foo = require('./lib/foo');
