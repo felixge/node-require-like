@@ -19,3 +19,30 @@ var requireLike = require(common.dir.lib + '/require-like');
   assert.notStrictEqual(myFoo, foo);
   assert.deepEqual(myFoo, foo);
 })();
+
+(function testResolve() {
+  var myRequire = requireLike(common.dir.fixture + '/bar.js');
+  var fooPath = myRequire.resolve('./foo');
+
+  assert.strictEqual(fooPath, common.dir.fixture + '/foo.js');
+})();
+
+(function testPaths() {
+  var myRequire = requireLike(common.dir.fixture + '/bar.js');
+  assert.strictEqual(myRequire.paths, require.paths);
+})();
+
+(function testMain() {
+  var myRequire = requireLike(common.dir.fixture + '/bar.js');
+  assert.strictEqual(myRequire.main, process.mainModule);
+})();
+
+(function testExtensions() {
+  var myRequire = requireLike(common.dir.fixture + '/bar.js');
+  assert.strictEqual(myRequire.extensions, require.extensions);
+})();
+
+(function testCache() {
+  var myRequire = requireLike(common.dir.fixture + '/bar.js');
+  assert.strictEqual(myRequire.cache, require.cache);
+})();
