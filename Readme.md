@@ -18,8 +18,18 @@ var myRequire = require('require-like').module(__dirname + '/lib/bar.js');
 var myFoo = myRequire('./foo.js');
 var foo = require('./lib/foo');
 
-require('assert').strictEquals(myFoo, foo);
+require('assert').strictEqual(myFoo, foo);
 ```
+
+## API
+
+### requireLike(path, [uncached])
+
+Returns a require function that acts as if it was operating in the given
+`path`.
+
+Setting the `uncached` parameter to true returns a function that by-passes the
+module cache.
 
 ## What to do with this
 
