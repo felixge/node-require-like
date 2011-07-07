@@ -13,5 +13,7 @@
     "node": "*"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "hashish": "0.0.3"
+  }
 }

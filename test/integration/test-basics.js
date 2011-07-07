@@ -46,3 +46,8 @@ var requireLike = require(common.dir.lib + '/require-like');
   var myRequire = requireLike(common.dir.fixture + '/bar.js');
   assert.strictEqual(myRequire.cache, require.cache);
 })();
+
+(function testLoadNodeModule() {
+  var myRequire = requireLike(common.dir.lib + '/foo.js', true);
+  myRequire('hashish');
+})();
