@@ -2,7 +2,7 @@
   "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
   "name": "require-like",
   "description": "Generates require functions that act as if they were operating in a given path.",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://github.com/felixge/node-require-like",
   "repository": {
     "type": "git",
