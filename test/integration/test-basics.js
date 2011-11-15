@@ -27,10 +27,12 @@ var requireLike = require(common.dir.lib + '/require-like');
   assert.strictEqual(fooPath, common.dir.fixture + '/foo.js');
 })();
 
-(function testPaths() {
-  var myRequire = requireLike(common.dir.fixture + '/bar.js');
-  assert.strictEqual(myRequire.paths, require.paths);
-})();
+if (process.version <= 'v0.5') {
+  (function testPaths() {
+    var myRequire = requireLike(common.dir.fixture + '/bar.js');
+    assert.strictEqual(myRequire.paths, require.paths);
+  })();
+}
 
 (function testMain() {
   var myRequire = requireLike(common.dir.fixture + '/bar.js');
