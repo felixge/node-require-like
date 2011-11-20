@@ -1,5 +1,7 @@
 # require-like
 
+[![Build Status](https://secure.travis-ci.org/felixge/node-require-like.png)](http://travis-ci.org/felixge/node-require-like)
+
 Generates require functions that act as if they were operating in a given path.
 
 ## Install
