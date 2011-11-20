@@ -12,8 +12,12 @@
   "engines": {
     "node": "*"
   },
+  "scripts": {
+    "test": "make test"
+  },
   "dependencies": {},
   "devDependencies": {
-    "hashish": "0.0.3"
+    "hashish": "0.0.3",
+    "urun": "0.0.4"
   }
 }
