@@ -2,12 +2,13 @@
   "author": "Felix Geisendörfer <felix@debuggable.com> (http://debuggable.com/)",
   "name": "require-like",
   "description": "Generates require functions that act as if they were operating in a given path.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/felixge/node-require-like",
   "repository": {
     "type": "git",
     "url": "git://github.com/felixge/node-require-like.git"
   },
+  "license": "MIT",
   "main": "./lib/require-like",
   "engines": {
     "node": "*"
@@ -17,8 +18,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "hashish": "0.0.3",
-    "urun": "0.0.4"
+    "hashish": "0.0.4",
+    "urun": "0.0.8"
   },
   "optionalDependencies": {}
 }
