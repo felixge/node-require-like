@@ -1,7 +1,7 @@
 var common = require('../common');
 var assert = common.assert;
 var requireLike = require(common.dir.lib + '/require-like');
-
+var path = require('path');
 
 (function testWithCache() {
   var foo = require(common.dir.fixture + '/foo.js');
@@ -23,8 +23,7 @@ var requireLike = require(common.dir.lib + '/require-like');
 (function testResolve() {
   var myRequire = requireLike(common.dir.fixture + '/bar.js');
   var fooPath = myRequire.resolve('./foo');
-
-  assert.strictEqual(fooPath, common.dir.fixture + '/foo.js');
+  assert.strictEqual(fooPath, path.join(common.dir.fixture, 'foo.js'));
 })();
 
 if (process.version <= 'v0.5') {
