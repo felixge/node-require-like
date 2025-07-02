@@ -18,8 +18,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "hashish": "0.0.3",
-    "urun": "0.0.4"
+    "hashish": "0.0.4",
+    "urun": "0.0.8"
   },
   "optionalDependencies": {}
 }
